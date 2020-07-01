@@ -8,6 +8,7 @@ from models.base_model import BaseModel
 
 
 class HBNBCommand(cmd.Cmd):
+    '''HBNB Command'''
     prompt = ('(hbnb)')
 
     def do_quit(self, args):

@@ -27,7 +27,7 @@
 <br>[BaseModel] (527c7c6c-ddbc-4555-bef4-d08c0dc7fd7c) {'updated_at': datetime.datetime(2020, 7, 1, 21, 7, 15, 380224), 'id': '527c7c6c-ddbc-4555-bef4-d08c0dc7fd7c', 'created_at': datetime.datetime(2020, 7, 1, 21, 7, 15, 380080), 'name': 'Holberton', 'my_number': 89} </code>
 
 >Technologies Used: 
-Written in Python version 3.6.9 - Verified by the PEP8 version 1.7 
+Written in Python version 3.4.3 - Verified by the PEP8 version 1.7 
 
 
 ## Contributors
