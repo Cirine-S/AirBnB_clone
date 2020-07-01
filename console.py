@@ -5,6 +5,8 @@ import json
 import shlex
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
+from models.user import User
+from models import storage
 
 
 class HBNBCommand(cmd.Cmd):
