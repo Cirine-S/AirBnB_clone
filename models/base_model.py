@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""
-BaseModel class file
-"""
+'''BaseModel class file'''
 from datetime import datetime
 import uuid
 import models
 
 
 class BaseModel:
+    ''' BaseModel Class'''
     def __init__(self, *args, **kwargs):
+        '''init construct'''
         if kwargs:
             for key, value in kwargs.items():
                 if key == 'created_at' or key == 'updated_at':
