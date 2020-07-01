@@ -5,12 +5,14 @@ FileStorage class file
 from models.base_model import BaseModel
 import json
 import models
+
+
 class FileStorage:
     ''' File Storage class'''
     __file_path = 'file.json'
     __objects = {}
 
-    def all(self): 
+    def all(self):
         return self.__objects
 
     def new(self, obj):
@@ -23,7 +25,7 @@ class FileStorage:
             d[key] = value.to_dict()
         with open(self.__file_path, 'w') as f:
             json.dump(d, f)
-            
+
     def reload(self):
         try:
             with open(self.__file_path, 'r') as f:

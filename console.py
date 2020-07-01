@@ -6,6 +6,7 @@ import shlex
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
 
+
 class HBNBCommand(cmd.Cmd):
     prompt = ('(hbnb)')
 
@@ -27,12 +28,11 @@ class HBNBCommand(cmd.Cmd):
             new_instance = eval(args[0])()
             new_instance.save()
             print(new_instance.id)
-
-        except:
+        except NameError:
             print("** class doesn't exist **")
 
     def do_show(self, args):
-        ''' cmd to print the string repr of an instance based on the class name and id'''
+        '''cmd to print the string repr of an instance based on name and id'''
         args = shlex.split(args)
         if len(args) == 0:
             print("** class name missing **")
@@ -68,7 +68,7 @@ class HBNBCommand(cmd.Cmd):
         storage.save()
 
     def do_all(self, args):
-        ''' cmd to print all string repr of all instances based or not on the class name'''
+        '''cmd to print string repr of all instances'''
         obj_list = []
         storage = FileStorage()
         storage.reload()
