@@ -5,5 +5,5 @@ import models
 
 
 class Amenity(BaseModel):
-    '''amenity class''
+    '''amenity class'''
     name = ''
