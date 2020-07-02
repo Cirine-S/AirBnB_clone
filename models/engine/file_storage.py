@@ -36,10 +36,12 @@ class FileStorage:
     def reload(self):
         '''loads from json file without errors'''
         try:
-            with open(self.__file_path, 'r') as f:
+            with open(self.__file_path) as f:
                 dic = json.load(f)
 
             for keys in dic.keys():
                 self.__objects[keys] = BaseModel(**dic[keys])
         except FileNotFoundError:
             pass
+
+
