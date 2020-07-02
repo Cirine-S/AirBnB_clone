@@ -27,6 +27,10 @@ class HBNBCommand(cmd.Cmd):
         print()
         return True
 
+    def emptyline(self):
+        '''executes nothing'''
+        pass
+
     def do_create(self, args):
         '''cmd to create a BaseModel instance and saves it to JSON file'''
         if len(args) == 0:
