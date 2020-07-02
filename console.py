@@ -16,7 +16,7 @@ from models.state import State
 
 class HBNBCommand(cmd.Cmd):
     '''HBNB Command'''
-    prompt = ('(hbnb)')
+    prompt = ('(hbnb) ')
 
     def do_quit(self, args):
         '''Quit command to exit the program'''
