@@ -16,7 +16,7 @@ from models.state import State
 
 class HBNBCommand(cmd.Cmd):
     '''HBNB Command'''
-    prompt = ('(hbnb) ')
+    prompt = '(hbnb) '
 
     def do_quit(self, args):
         '''Quit command to exit the program'''
@@ -26,6 +26,11 @@ class HBNBCommand(cmd.Cmd):
         '''EOF command to exit the program'''
         print()
         return True
+
+     def emptyline(self):
+        """executes nothing
+        """
+        pass
 
     def do_create(self, args):
         '''cmd to create a BaseModel instance and saves it to JSON file'''
