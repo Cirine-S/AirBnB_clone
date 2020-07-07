@@ -15,7 +15,7 @@
 <li>update attributes of an object
 <li>store a new or an updated object (in a json file)
 </lu>
-<br>
+<br><br>
 >The purpose of this project is to have a powerful storage system. The console is a tool to validate this storage engine
 <br>
 >An example for object's save/ reload:
