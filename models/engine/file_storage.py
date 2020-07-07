@@ -43,5 +43,3 @@ class FileStorage:
                 self.__objects[keys] = BaseModel(**dic[keys])
         except FileNotFoundError:
             pass
-
-

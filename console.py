@@ -53,16 +53,13 @@ class HBNBCommand(cmd.Cmd):
         if len(args) == 1:
             print("** instance id missing **")
             return
-        storage = FileStorage()
-        storage.reload()
-        obj_dict = storage.all()
         try:
-            eval(args[0])
+            key = args[0] + '.' + args[1]
+            print(storage.all()[key])
         except NameError:
             print("** class doesn't exist **")
             return
-        key = args[0] + "." + args[1]
-        key = args[0] + "." + args[1]
+
 
     def do_destroy(self, args):
         ''' cmd to delete an instance based on the class name and id '''
@@ -73,12 +70,13 @@ class HBNBCommand(cmd.Cmd):
         elif len(args) == 1:
             print("** instance id missing **")
             return
-        class_name = args[0]
-        class_id = args[1]
-        storage = FileStorage()
-        storage.reload()
-        obj_dict = storage.all()
-        storage.save()
+        try:
+            key = args[0] + '.' + args[1]
+            del storage.all()[key]
+            storage.save()
+        except NameError:
+            print("** class doesn't exist **")
+            return
 
     def do_all(self, args):
         '''cmd to print string repr of all instances'''
