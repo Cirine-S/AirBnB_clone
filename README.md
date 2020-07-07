@@ -22,10 +22,10 @@
 <br>
 <code> 
 ┌─[21:06:24[] []cirine[] [][Projects/AirBnB_clone][]]
-<br> └─>./test_save_reload_base_model.py 
-<br><br>-- Reloaded objects --
-<br>-- Create a new object --
-<br>[BaseModel] (527c7c6c-ddbc-4555-bef4-d08c0dc7fd7c) {'updated_at': datetime.datetime(2020, 7, 1, 21, 7, 15, 380224), 'id': '527c7c6c-ddbc-4555-bef4-d08c0dc7fd7c', 'created_at': datetime.datetime(2020, 7, 1, 21, 7, 15, 380080), 'name': 'Holberton', 'my_number': 89} </code>
+└─>./test_save_reload_base_model.py 
+-- Reloaded objects --
+-- Create a new object --
+[BaseModel] (527c7c6c-ddbc-4555-bef4-d08c0dc7fd7c) {'updated_at': datetime.datetime(2020, 7, 1, 21, 7, 15, 380224), 'id': '527c7c6c-ddbc-4555-bef4-d08c0dc7fd7c', 'created_at': datetime.datetime(2020, 7, 1, 21, 7, 15, 380080), 'name': 'Holberton', 'my_number': 89} </code>
 <br><br>
 >Technologies Used: 
 Written in Python version 3.4.3 - Verified by the PEP8 version 1.7 
